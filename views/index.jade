@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    //- randomly assign classes like c0, c5
+    //- will be used to pick colors
+    - random = Math.floor(Math.random() * 6 + 1)
+    != '<div class="c' + random + '">'
+        header.cf
+            h1.classNumber= classNumber
+            h1.className= className
+        p.ddc Doge Decimal Classification
+    != '</div>'

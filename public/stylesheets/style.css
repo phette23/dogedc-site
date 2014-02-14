@@ -1,0 +1,128 @@
+body {
+    padding: 2em;
+    font-family: "Comic Sans MS", "Comic Sans", Chalkboard, Helvetica, sans-serif;
+}
+
+.classNumber {
+    color: #800000;
+    float: left;
+    font-size: 3em;
+    margin-right: 1em;
+}
+
+.className {
+    color: #999;
+    font-size: 3em;
+}
+
+.ddc {
+    font-style: italic;
+    text-indent: 1em;
+}
+
+/* random colors */
+.c0 .className {
+    color: #69f;
+}
+.c0 .classNumber {
+    color: #0000ff;
+}
+.c0 .ddc {
+    color: #00ffff;
+}
+.c1 .className {
+    color: #ff0000;
+}
+.c1 .classNumber {
+    color: #7f007f;
+}
+.c1 .ddc {
+    color: #ffe561;
+}
+.c2 .className {
+    color: #ff00ff;
+}
+.c2 .classNumber {
+    color: #ff7f00;
+}
+.c2 .ddc {
+    color: #996633;
+}
+.c3 .className {
+    color: #35996a;
+}
+.c3 .classNumber {
+    color: #0000ff;
+}
+.c3 .ddc {
+    color: #00ffff;
+}
+.c4 .className {
+    color: #ff0000;
+}
+.c4 .classNumber {
+    color: #ff00ff;
+}
+.c4 .ddc {
+    color: #00ff00;
+}
+.c5 .className {
+    color: #ffde5f;
+}
+.c5 .classNumber {
+    color: #ff825b;
+}
+.c5 .ddc {
+    color: #ff00be;
+}
+.c6 .className {
+    color: #375bff;
+}
+.c6 .classNumber {
+    color: #ff175f;
+}
+.c6 .ddc {
+    color: #44ff2e;
+}
+
+footer {
+    bottom: 0;
+    display: block;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+}
+
+/* footer links */
+footer a {
+    color: #00B7FF;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+footer a:hover,
+footer a:active {
+    color: #D51BE0;
+}
+
+p {
+    margin: 1em;
+}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: ' ';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
