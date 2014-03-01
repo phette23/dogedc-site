@@ -6,10 +6,13 @@
     "start": "node app.js 80"
   },
   "dependencies": {
+    "dogedc": "0.1.0",
     "express": "3.4.8",
     "jade": "*"
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "devDependencies": {
   }
 }
