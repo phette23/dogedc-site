@@ -1,0 +1,16 @@
+# Doge Decimal Classification Site
+
+This is the code for the website https://dogedc.herokuapp.com/. It's an [Express](expressjs.com) app running on Node. It uses a fairly typically Express stack, including [Jade](http://jade-lang.com/) for markup.
+
+## Installation
+
+- clone this repo
+- run `npm install` in its root
+
+## Running Locally
+
+Run `npm start` inside the project's root and a local web server should start running on port 3000. I like to use [nodemon](http://nodemon.io/) in development because it reloads the site every time I change a file and handles crashes nicely; `nodemon app` inside the project's root will start things off.
+
+## To Do
+
+- grunt tasks for running a dev server, watching & then minifying CSS
