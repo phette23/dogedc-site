@@ -1,6 +1,6 @@
 # Doge Decimal Classification Site
 
-This is the code for the website https://dogedc.herokuapp.com/. It's an [Express](expressjs.com) app running on Node. It uses a fairly typically Express stack, including [Jade](http://jade-lang.com/) for markup.
+This is the code for the website https://dogedc.herokuapp.com/. It's an [Express](expressjs.com) app running on Node. It uses a fairly typically Express stack, including [Jade](http://jade-lang.com/) for the markup. Uses the [dogedc](/phette23/dogedc) npm module, naturally.
 
 ## Installation
 
