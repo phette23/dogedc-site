@@ -1,6 +1,6 @@
 {
   "name": "doge-decimal-classification",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node app"
@@ -13,6 +13,18 @@
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phette23/dogedc-site"
+  },
+  "author": {
+    "name": "phette23",
+    "email": "phette23@gmail.com",
+    "url": "http://phette.net/"
+  },
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/phette23/dogedc-site/issues"
   }
 }
