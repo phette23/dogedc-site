@@ -1,6 +1,7 @@
 body {
     padding: 2em;
-    font-family: "Comic Sans MS", "Comic Sans", Chalkboard, Helvetica, sans-serif;
+    /* need Marker Felt for iOS */
+    font-family: "Comic Sans MS", "Comic Sans", Chalkboard, "Marker Felt", Helvetica, sans-serif;
 }
 
 p {
