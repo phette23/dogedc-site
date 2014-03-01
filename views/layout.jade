@@ -12,8 +12,14 @@ html
         meta(name="twitter:site", content="@phette23")
         meta(name="twitter:title", content="Doge Decimal Classification")
         meta(name="twitter:description", content="So doge. Many decimal. Much classification. No Dewey. Wow.")
-        meta(name="twitter:image", content="images/doge.jpg")
-        //- todo: FB OG?
+        //- WARNING absolute URL, Twitter demands it
+        meta(name="twitter:image", content="https://dogedc.herokuapp.com/images/doge.jpg")
+        meta(property="og:title", content="Doge Decimal Classification")
+        meta(property="og:type", content="website")
+        //- WARNING absolute URLs
+        meta(property="og:url", content="https://dogedc.herokuapp.com")
+        meta(property="og:image", content="https://dogedc.herokuapp.com/images/doge.jpg")
+        meta(property="og:description", content="So doge. Many decimal. Much classification. No Dewey. Wow.")
     body
         block content
     footer
