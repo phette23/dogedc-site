@@ -13,7 +13,12 @@
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-contrib-csslint": "^0.2.0",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-cssmin": "^0.9.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/phette23/dogedc-site"
