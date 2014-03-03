@@ -11,6 +11,10 @@ This is the code for the website https://dogedc.herokuapp.com/. It's an [Express
 
 Run `npm start` inside the project's root and a local web server should start running on port 3000. I like to use [nodemon](http://nodemon.io/) in development because it reloads the site every time I change a file and handles crashes nicely; `nodemon app` inside the project's root will start things off.
 
-## To Do
+There are a few grunt tasks available for development:
 
-- grunt tasks for running a dev server, watching & then minifying CSS
+- `grunt watch` watches style.css for changes & re-minifies it
+- `grunt server` runs both `grunt watch` & `nodemon app` in parallel, making it the best tool for development. If you don't have nodemon installed globally it won't work.
+- `grunt build` minifies style.css to style.min.css
+- `grunt test` runs csslint on style.css
+- the `grunt` default will run test & then build
