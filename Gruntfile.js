@@ -3,6 +3,10 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
+    watch: {
+      files: 'public/stylesheets/style.css',
+      tasks: 'build'
+    },
     cssmin: {
       minify: {
         expand: true,
