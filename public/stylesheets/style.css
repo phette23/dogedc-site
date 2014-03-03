@@ -1,5 +1,6 @@
 body {
-    padding: 2em;
+    margin: 0;
+    padding: 1em;
     /* need Marker Felt for iOS */
     font-family: "Comic Sans MS", "Comic Sans", Chalkboard, "Marker Felt", Helvetica, sans-serif;
 }
@@ -144,6 +145,10 @@ footer p {
 
 /* media queries */
 @media screen and (min-width: 600px) {
+    body {
+        padding: 2em;
+    }
+
     footer {
         bottom: 0;
         padding: 1em;
