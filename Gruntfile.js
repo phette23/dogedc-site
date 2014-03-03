@@ -24,11 +24,17 @@ module.exports = function(grunt) {
         },
         src: ['public/stylesheets/style.css']
       }
+    },
+    exec: {
+      server: {
+        cmd: 'nodemon app & grunt watch'
+      }
     }
   });
 
   grunt.registerTask('test', ['csslint']);
   grunt.registerTask('build', ['cssmin']);
+  grunt.registerTask('server', ['exec']);
   grunt.registerTask('default', ['test', 'build']);
 
 };
