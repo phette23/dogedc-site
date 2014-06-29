@@ -1,12 +1,12 @@
 {
   "name": "doge-decimal-classification",
-  "version": "0.1.0",
+  "version": "0.2.4",
   "private": true,
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
-    "dogedc": "0.1.0",
+    "dogedc": "0.2.4",
     "express": "3.4.8",
     "jade": "*"
   },
