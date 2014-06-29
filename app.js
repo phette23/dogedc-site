@@ -16,6 +16,7 @@ app.use(express.compress());
 // app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+app.disable('x-powered-by');
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
