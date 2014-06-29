@@ -2,6 +2,12 @@ var dogedc = require('dogedc');
 
 exports.index = function(req, res){
     dogedc(null, function(err, ddc) {
+        if (err) {
+            console.log(err);
+            res.redirect('/');
+            return;
+        }
+
         res.render('index', {
             classNumber: ddc.classNumber,
             className: ddc.dogeClassName
@@ -19,6 +25,12 @@ exports.number = function(req, res){
     }
 
     dogedc(classNumber, function(err, ddc) {
+        if (err) {
+            console.log(err);
+            res.redirect('/' + classNumber);
+            return;
+        }
+
         res.render('index', {
             classNumber: ddc.classNumber,
             className: ddc.dogeClassName
