@@ -20,7 +20,8 @@ module.exports = function(grunt) {
       strict: {
         options: {
           // used in micro-clearfix
-          "star-property-hack": false
+          "star-property-hack": false,
+          "adjoining-classes": false
         },
         src: ['public/stylesheets/style.css']
       }
