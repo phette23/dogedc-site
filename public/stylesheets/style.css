@@ -9,7 +9,7 @@ p {
     margin: 1em;
 }
 
-/* random colors */
+/* random color sets */
 .c0 .className {
     color: #69f;
 }
@@ -18,6 +18,10 @@ p {
 }
 .c0 .ddc {
     color: #00ffff;
+}
+.c0 .btn {
+    background-color: #20e;
+    color: #fff;
 }
 .c1 .className {
     color: #ff0000;
@@ -28,6 +32,10 @@ p {
 .c1 .ddc {
     color: #ffe561;
 }
+.c1 .btn {
+    background-color: #000;
+    color: #EC88FF;
+}
 .c2 .className {
     color: #ff00ff;
 }
@@ -36,6 +44,10 @@ p {
 }
 .c2 .ddc {
     color: #996633;
+}
+.c2 .btn {
+    background-color: #ddd;
+    color: #227A00;
 }
 .c3 .className {
     color: #35996a;
@@ -46,6 +58,10 @@ p {
 .c3 .ddc {
     color: #00ffff;
 }
+.c3 .btn {
+    background-color: #20e;
+    color: #fff;
+}
 .c4 .className {
     color: #ff0000;
 }
@@ -54,6 +70,10 @@ p {
 }
 .c4 .ddc {
     color: #00ff00;
+}
+.c4 .btn {
+    background-color: #2400FF;
+    color: #EBEB18;
 }
 .c5 .className {
     color: #ffde5f;
@@ -64,6 +84,10 @@ p {
 .c5 .ddc {
     color: #ff00be;
 }
+.c5 .btn {
+    background-color: #550355;
+    color: #fff;
+}
 .c6 .className {
     color: #375bff;
 }
@@ -72,6 +96,10 @@ p {
 }
 .c6 .ddc {
     color: #44ff2e;
+}
+.c6 .btn {
+    background-color: #00E4EE;
+    color: #4B0000;
 }
 
 /* main pieces */
@@ -97,6 +125,52 @@ p {
     color: #00B7FF;
 }
 
+/* shamelessly stolen foor twitrar boozetrap
+shh don't tell! */
+.btn {
+    border-radius: .3em;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3em;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    padding: 10px 16px;
+    text-align: center;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:link,
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+        -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+        -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+
+/* center on small screens */
+.btn-parent {
+    text-align: center;
+}
+
 /* footer stuff */
 footer {
     display: table;
@@ -105,10 +179,10 @@ footer {
 
 footer a {
     color: #00B7FF;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -o-transition: all 0.6s;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -ms-transition: all 0.6s;
+        -o-transition: all 0.6s;
     transition: all 0.6s;
 }
 
@@ -147,6 +221,12 @@ footer p {
 @media screen and (min-width: 600px) {
     body {
         padding: 2em;
+    }
+
+    .btn-parent {
+        /* extra spacing */
+        margin-bottom: 2em;
+        text-align: inherit;
     }
 
     footer {
