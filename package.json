@@ -6,7 +6,7 @@
     "start": "node app"
   },
   "dependencies": {
-    "dogedc": "0.2.4",
+    "dogedc": "1.0.0",
     "express": "3.4.8",
     "jade": "*"
   },
