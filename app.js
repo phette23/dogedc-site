@@ -12,10 +12,7 @@ app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
 app.use(express.logger('dev'));
 // use GZIP
 app.use(express.compress());
-// should be unnecessary, disabled
-// app.use(express.json());
 app.use(express.urlencoded());
-app.use(express.methodOverride());
 app.disable('x-powered-by');
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
