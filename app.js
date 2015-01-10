@@ -21,6 +21,7 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
+// app.set('env', 'development');
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
@@ -31,3 +32,11 @@ app.get('/:number', routes.number);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+// don't let Heroku put the app to sleep
+// http://quickleft.com/blog/6-easy-ways-to-prevent-your-heroku-node-app-from-sleeping
+setInterval(function() {
+    var url = app.get('env') == 'development' ? 'http://localhost:' + app.get('port') : "http://dogedc.herokuapp.com";
+
+    http.get(url);
+}, 300000);
