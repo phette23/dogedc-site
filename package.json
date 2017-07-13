@@ -15,7 +15,7 @@
     "serve-favicon": "^2.4.3"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "8.x.x"
   },
   "devDependencies": {
     "grunt": "^1",
