@@ -2,7 +2,7 @@
 
 ![](http://img.shields.io/david/phette23/dogedc-site.svg?style=flat-square) &nbsp; &nbsp; ![](http://img.shields.io/david/dev/phette23/dogedc-site.svg?style=flat-square)
 
-This is the code for the website https://dogedc.herokuapp.com/. It's an [Express](expressjs.com) app running on Node. It uses a fairly typically Express stack, including [Jade](http://jade-lang.com/) for the markup. Uses the [dogedc](/phette23/dogedc) npm module, naturally.
+This is the code for the website https://dogedc.herokuapp.com/. It's an [Express](expressjs.com) app running on Node. It uses a fairly typically Express stack, including [Jade](http://jade-lang.com/) for the markup. Uses the [dogedc](https://github.com/phette23/dogedc) npm module, naturally.
 
 ## Installation
 
