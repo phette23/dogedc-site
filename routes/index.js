@@ -1,46 +1,46 @@
-var dogedc = require('dogedc');
+const dogedc = require('dogedc')
 
 // for randomized color schemes
 let random = () => {
     return Math.floor(Math.random() * 6 + 1)
 }
 
-exports.index = function(req, res){
-    dogedc(null, function(err, ddc) {
+exports.index = (req, res) => {
+    dogedc(null, (err, ddc) => {
         if (err) {
-            console.log(err);
-            res.redirect('/');
-            return;
+            console.log(err)
+            res.redirect('/')
+            return
         }
 
         res.render('index', {
             classNumber: ddc.classNumber,
             className: ddc.dogeClassName,
             random: random()
-        });
-    });
-};
+        })
+    })
+}
 
-exports.number = function(req, res){
-    var classNumber = req.params.number;
+exports.number = (req, res) => {
+    var classNumber = req.params.number
 
     // improper classNumber
     if (!classNumber.match(/^\d{3}$/)) {
-        res.redirect('/');
-        return;
+        res.redirect('/')
+        return
     }
 
-    dogedc(classNumber, function(err, ddc) {
+    dogedc(classNumber, (err, ddc) => {
         if (err) {
-            console.log(err);
-            res.redirect('/' + classNumber);
-            return;
+            console.log(err)
+            res.redirect('/' + classNumber)
+            return
         }
 
         res.render('index', {
             classNumber: ddc.classNumber,
             className: ddc.dogeClassName,
             random: random()
-        });
-    });
-};
+        })
+    })
+}

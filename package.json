@@ -1,6 +1,6 @@
 {
   "name": "doge-decimal-classification",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "node app"
@@ -15,7 +15,7 @@
     "serve-favicon": "^2.5.0"
   },
   "engines": {
-    "node": "8.x.x"
+    "node": "12.x.x"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
