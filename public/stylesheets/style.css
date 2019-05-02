@@ -128,8 +128,8 @@ p {
 /* shamelessly stolen foor twitrar boozetrap
 shh don't tell! */
 .btn {
-    border-radius: .3em;
     border: 1px solid transparent;
+    border-radius: .3em;
     cursor: pointer;
     display: inline-block;
     font-size: 3em;
@@ -137,9 +137,6 @@ shh don't tell! */
     margin-bottom: 0;
     padding: 10px 16px;
     text-align: center;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -webkit-user-select: none;
     user-select: none;
     vertical-align: middle;
     white-space: nowrap;
