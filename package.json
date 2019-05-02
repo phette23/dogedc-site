@@ -6,24 +6,25 @@
     "start": "node app"
   },
   "dependencies": {
-    "compression": "^1.7.0",
-    "dogedc": "1.0.0",
+    "compression": "^1.7.4",
+    "dogedc": "^1.1",
     "errorhandler": "^1.5.0",
-    "express": "^4.15.3",
+    "express": "^4.16.4",
     "jade": "*",
-    "morgan": "^1.8.2",
-    "serve-favicon": "^2.4.3"
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
   },
   "engines": {
     "node": "8.x.x"
   },
   "devDependencies": {
-    "grunt": "^1",
+    "grunt": "^1.0.4",
     "grunt-contrib-csslint": "^2",
-    "grunt-contrib-cssmin": "^2",
-    "grunt-contrib-watch": "^1",
-    "grunt-exec": "^2",
-    "matchdep": "^1"
+    "grunt-contrib-cssmin": "^3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-exec": "^3.0",
+    "matchdep": "^2.0",
+    "nodemon": "^1.19.0"
   },
   "repository": {
     "type": "git",
