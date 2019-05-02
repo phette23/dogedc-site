@@ -1,5 +1,10 @@
 var dogedc = require('dogedc');
 
+// for randomized color schemes
+let random = () => {
+    return Math.floor(Math.random() * 6 + 1)
+}
+
 exports.index = function(req, res){
     dogedc(null, function(err, ddc) {
         if (err) {
@@ -10,7 +15,8 @@ exports.index = function(req, res){
 
         res.render('index', {
             classNumber: ddc.classNumber,
-            className: ddc.dogeClassName
+            className: ddc.dogeClassName,
+            random: random()
         });
     });
 };
@@ -33,7 +39,8 @@ exports.number = function(req, res){
 
         res.render('index', {
             classNumber: ddc.classNumber,
-            className: ddc.dogeClassName
+            className: ddc.dogeClassName,
+            random: random()
         });
     });
 };

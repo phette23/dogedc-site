@@ -1,10 +1,7 @@
 extends layout
 
 block content
-    //- randomly assign classes like c0, c5
-    //- will be used to pick colors
-    - random = Math.floor(Math.random() * 6 + 1)
-    != '<div class="c' + random + '">'
+    div(class=`c${random}`)
         header.cf
             h1.classNumber= classNumber
             h1.className= className
@@ -14,4 +11,3 @@ block content
         p.ddc.
                 Doge Decimal Classification<br>
                 Put your favorite 3-digit class on the end of the URL!
-    != '</div>'

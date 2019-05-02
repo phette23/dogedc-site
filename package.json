@@ -1,6 +1,6 @@
 {
   "name": "doge-decimal-classification",
-  "version": "0.2.4",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node app"
@@ -10,8 +10,8 @@
     "dogedc": "^1.1",
     "errorhandler": "^1.5.0",
     "express": "^4.16.4",
-    "jade": "*",
     "morgan": "^1.9.1",
+    "pug": "^2.0.3",
     "serve-favicon": "^2.5.0"
   },
   "engines": {
